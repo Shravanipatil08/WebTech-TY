@@ -1,0 +1,115 @@
+<!-- event - is an action that happens in browser. clicking a button moving mouse , pressing key , submiting form , loading page. -->
+<!-- Java Script can detect these events and respond to them. -->
+<!-- Types of events Mouse - (Click,dblClick,mouseover,mouseout)
+                     Keyboard - (KeyDown,KeyUp),
+                     Browser Events - (Load,Resize,Scroll) -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop" src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan" src="https://images.unsplash.com/photo-1501785888041-af3ef285b470" alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature" src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b" alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger" src="https://images.unsplash.com/photo-1546182990-dffeafbe841d" alt="Tiger"
+                onclick="alert('Clicked')">
+            <!-- HTML should contains structure,JS should contains logic mixing both is bad practice hard to maintain big projects.  -->
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+</body>
+<script>
+    document.getElementById("photoman").onclick = () => alert("Java Script Called.") //select element assign function to event when clicked this function runs. problem only one event can be assigned can not handle mulitple listeners properly.
+    document.getElementById("Nature").addEventListener("click", (e) => { console.log(e) }, false)
+    //addEventListener is a JS method used to attach an event handler to an HTML element so that specific function run when a particular event occcurs. 
+
+    // event bubbling/propagation
+    document.getElementById("images").addEventListener("click", () => console.log("Clicking inside the UL"), true) //false - event goes inner elemnt to element and parent to element. bubbling up (Child -> Parent) true -> (Parent -> Child)
+    document.getElementById("photoshop").addEventListener("click", () => console.log("Clicking on photoshop"))
+
+    document.getElementById("google").addEventListener("click", (e) => { console.log("google Clicked"); e.preventDefault() })
+
+    document.querySelectorAll("li").forEach(li => {
+        li.addEventListener("click", () => {
+            li.remove()
+        })
+    })
+</script>
+
+</html>
+
+<!-- Home activity remove the image after click -->
+<!-- 
+home activity 
+jQuery - A JavaScript library that simplifies DOM, events, and AJAX with less code. $(#btn).click(()=> log("Clicked")))
+type - which type of event.
+timestamp - return time of event occurs in ms.
+defalut prevented - preventDefault() stops the browser’s default behaviour for that event.
+target - it returns exact HTML element.
+source element - same as target used in old browsers.
+current target - who is handling the event it is may be parent
+clientx,y - They give the mouse position inside the browser’s visible area (viewport).
+screen x,y - They give the mouse position relative to your entire computer screen (monitor).
+alt,shift,ctrl key - return true if these buttonss are cliked otherwise false.
+-->
