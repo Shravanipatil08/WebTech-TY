@@ -1,0 +1,62 @@
+# ANGULAR :- 
+    - Angular is a type script based frontend framework developed by google.
+    - it helps us build a single page application. 
+    - SPA : Single Page application 
+        - where the page does not fully reload when navigation between different views.
+        - Example : Youtube
+        
+    TOOLS FOR ANGULAR 
+        - nodeJS : JS runtime envrionment 
+        - npm : node package manager
+        - angular CLI (Command line Interface) 
+            - It is used for create and manage angular app.
+
+
+# STEPS to create and run angular application - 
+1. npm install -g @angular/cli
+2. ng new my-First-App
+3. ng serve
+
+
+# File Names and their purpose :
+    - package.json - packages list includes depenedancies, den-depenedancies
+        - Dependancies - used for Production build
+        - dev Dependancies - local depenedancies.
+
+    - style.css - globally changes style
+    - .gitignore - files or folders execute 
+    - tsconfi.json - typscript configuration file
+    - index.html - main html file loads angular 
+    - app.config.ts - app configuration file
+    - main.ts - entry point of the application
+
+
+# Component - 
+    - is a UI block or structure, 
+    - when we create Component 4 files are created
+        - html
+        - css
+        - typescript
+        - spec.ts
+
+    - cmd : ng g c componentName
+
+
+# Data Binding : 
+    - connect UI to code 
+    - There are 2 types of data Binding
+        1. One way 
+            - interpolation
+                Show data from ts in html
+                {{value}}
+            - Property Binding
+            - Event Binding
+        2. Two way 
+            - ng module
+
+
+
+
+# Interview Questions -
+    1. How we create angular project ?
+    2. what is meant by ng ? 
