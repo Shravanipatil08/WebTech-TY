@@ -1,0 +1,27 @@
+<div class="container my-5">
+  <div class="card shadow-sm p-4">
+    
+    <h2 class="mb-4">Student Info</h2>
+
+    <table class="table table-hover table-striped align-middle">
+      
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Age</th>
+          <th scope="col">Course</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr *ngFor="let stud of studentList">
+          <td>{{stud.name}}</td>
+          <td>{{stud.age}}</td>
+          <td>{{stud.course}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+</div>
