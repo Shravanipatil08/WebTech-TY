@@ -1,0 +1,74 @@
+/* style.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+#clock {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+input {
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: white;
+  margin: 8px auto;
+  padding: 10px;
+  width: 250px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.quote-box {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#quoteText {
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+}
+
+#quoteAuthor {
+  margin-top: 10px;
+  color: #007bff;
+}

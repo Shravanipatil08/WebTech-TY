@@ -1,0 +1,9 @@
+body {
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+#questionBox {
+    min-height: 70px;
+    font-weight: 500;
+}

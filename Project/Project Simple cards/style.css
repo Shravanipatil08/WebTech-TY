@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+
+#cardBox{
+    margin-top: 30px;
+}
+
+.card{
+    background-color: white;
+    padding: 15px;
+    margin: 10px auto;
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-actions{
+    display: none;
+    margin-top: 10px;
+}
+
+.card:hover .card-actions{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
