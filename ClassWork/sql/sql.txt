@@ -1,0 +1,22 @@
+SQL-Structured Query Language is used to communication btn realtional time database.
+imp
+create table
+insert data
+select data,table
+update and table
+delete
+
+1)create table students(id int auto increment primary key,name varchar(20),age int,course varchar(20));
+2)inset into students(name,age,course) values ("Atharv",20,"CSE Ai/Ml");
+3)select * from students;
+4)update students set name = "Atharv Niprul" where id = 1;
+5)delete from students where id = 1;
+
+Connection nodejs to SQL:
+node --version
+npm install mysql2
+
+create tables and database
+
+create nodejs project
+

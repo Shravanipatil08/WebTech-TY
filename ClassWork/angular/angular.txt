@@ -49,10 +49,17 @@
             - interpolation
                 Show data from ts in html
                 {{value}}
+                
             - Property Binding
+                Bind HTML Property to TS variable
+                [Property]=value
             - Event Binding
+                call function on event
+                (click)=()
         2. Two way 
             - ng module
+                Sync data both ways - Ts to html and html to ts
+                [(ngModel)]="value"
 
 
 
@@ -60,3 +67,36 @@
 # Interview Questions -
     1. How we create angular project ?
     2. what is meant by ng ? 
+
+Before angular 15 we use or need ng model but we are using angular 21+ version modules are optionals
+you can now use standalone components
+
+Directives :
+    Think the Directives like magic wands that can change your web page without rewriting it 
+    there are 2 types of Directives -Structural and atrributes
+
+    Structural Directives : change your structure of our page 
+    ng if ,ng for, ng switch
+
+    atrributes : ng style how it looks 
+
+    Home activity ::
+    1. how we can use if else for loop and switch in angular with examples
+    
+
+    Routing :: Navigation between  one page to another is Routing
+
+
+ must use formModule in import while working with if,if-else,switch
+ for commonmodule
+
+ * services and Dependancies injection
+
+ a services is like a helper class 
+ also used to store data or share logic that many components can use
+ instead of writing the same code in every component ,we write it once in a service .
+
+ng on init is lifecycle hook this cycle runs automatically when components load 
+
+activity-1 write a two ex with services in angular and learn more about dependencies injection
+activity-2 

@@ -1,0 +1,57 @@
+Express is a minimal and flexible web application framework for . that simplifies the development of web server and apis.
+it provides features such as routing , middleware support , request and response handling , template rendaring , REST API's creation.
+
+1.Diff btn package.json and package-lock.json
+package.json serves as a manifest for a Node.js project, detailing metadata, s
+cripts, and a list of generalized dependencies with version ranges. 
+In contrast, package-lock.json is an automatically generated lockfile that records 
+the exact versions and download sources of all installed packages and 
+their nested dependencies, ensuring consistent and reproducible builds across 
+different environments.
+
+2.Diff Dev dependancies and dependancies.
+Dependencies are packages your app needs to run in production (e.g., Express in a Node app).
+DevDependencies are only needed during development (e.g., testing libraries, linters, build tools).
+
+Routing in Express:
+    Referers to determining how an application response to client request for specific URL and HTTP method.
+
+Componenets 
+1.URL path
+2.HTTP method
+3.Handler function
+
+Create 3-4 routes
+
+3.Create something 
+4.HTTP methods
+
+middleware in JS Express:
+    is a function that execute during request before sending the final response.
+    They have aceess to request,response and next.
+
+Activities:
+Q1)Why we use middlewares?
+ - Middleware is used to process requests before they reach the final route handler.
+   It can handle tasks like authentication, logging, validation, or modifying requests/responses.
+    
+Q2)What are the types of middlewares?
+ - In Express.js, middleware types are mainly:
+   1.Application-level middleware – Used across the entire app (e.g., logging, authentication).
+   2.Router-level middleware – Applied to specific routes using Express Router.
+   3.Built-in middleware – Provided by Express (like express.json() for parsing JSON).
+   4.Third-party middleware – External packages (like morgan, cors).
+   5.Error-handling middleware – Handles errors (defined with 4 parameters: err, req, res, next).
+
+Q3)what are a benefits of middlewares?
+ - Code reusability – Write once (e.g., auth, logging) and use in multiple routes.
+   Better organization – Keeps route logic clean and separated.
+   Request processing control – You can modify request/response before reaching the final handler.
+   Error handling – Centralized way to catch and manage errors.
+
+Q4)When we use middlewares in industry level?
+ - Authentication & Authorization – Check login, JWT tokens, user roles before allowing access.
+   Logging & Monitoring – Track requests, errors, and performance for debugging and analytics.
+   Validation & Sanitization – Validate user input (forms, APIs) to prevent invalid or harmful data.
+   Error Handling – Centralized handling of server errors without breaking the app.
+   Security – Add headers, prevent attacks (CORS, rate limiting, etc.).

@@ -1,0 +1,32 @@
+what is ORM-
+    instead of writing SQL queries uses js objects.
+    without ORM - select * from students;
+    with ORM - student.FindAll()
+
+Web Socekt- allows us real time communication.
+
+HTTP-> REQ -> RES
+<---- Web Socket ---->
+
+ex- chat apps like whats app.
+live stock price updates.
+online gaming.
+notification.
+
+installation:
+    npm install ws
+
+Activities:
+    deep study web socket understand ws with eaxmple.
+    -WebSocket is a protocol that enables full-duplex, real-time communication between client and server over a single persistent TCP connection.
+    -It starts with an HTTP upgrade handshake and then keeps the connection open for continuous data exchange.
+    -Unlike HTTP, it avoids repeated requests, giving low latency and efficient communication.
+    -It is widely used in chat apps, live notifications, and online gaming.
+
+    working:
+        Client sends HTTP request with Upgrade: websocket
+        Server accepts → connection becomes WebSocket
+        Connection stays OPEN
+        Both sides can send data anytime (no request-response waiting)
+
+        For example, in a chat app, when one user sends a message, all connected users receive it instantly using WebSocket.

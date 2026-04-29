@@ -1,3 +1,17 @@
-<p>home works!</p>
+<p>Student Details !!</p>
 {{fname}}
+{{myRoll}}
+{{course}}
+<br>
 
+<img [src]="imageURL">
+<!-- //Two way ng model -->
+<input [(ngModel)]="fname" placeholder="Firstname :"><br><br>
+<input [(ngModel)]="myRoll" placeholder="Roll No :"><br><br>
+<input [(ngModel)]="course" placeholder="Course :"><br><br>
+
+<ul>
+    <li *ngFor="let hero of heroes">
+        {{ hero }}
+    </li>
+</ul>

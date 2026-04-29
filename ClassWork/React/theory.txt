@@ -1,0 +1,84 @@
+-react is js library developed by meta to build a fast and interactive interfaces
+-it is single page application(spa)
+
+page doesnot reload,only conetent change
+ex- ig,fb,yt
+
+why do we use react/problem with js ?
+-fully page reload , copmlex dom manipulation , hard to manage large application 
+solution -> updates only require parts to use reusable components
+
+virtual DOM - is a lightweight copy of the real DOM used by React to improve performance.
+- when data changes react updates virtual dom 
+- update only changed the part in the dom
+- high performance 
+
+How to create project in react 
+npx create react-app name:old
+
+Activity 1 -
+1.what is diff between angular & react 
+2.market hype??
+3.why react is created??
+
+vite: fast build tool, npm install means install dependences and np run dev means Start Server.
+
+Jsx -> JS + xml -  it allows to us write js code inside 
+
+ex of jsx - const element =</h1> Hello react </h1>
+
+rules of jsx - 
+1. must return single parent 
+2. use {} for js
+
+components is a Heart of React
+syntax: functional component in react :
+example: function function_name()
+{
+    return <h1> this is Fc </h1>
+}
+
+Use of component - 
+function app()
+{
+    return<> <student> </>
+}  
+to print single sentence multiple times :
+call same function that times <addstudent/> <addstudent/> this print  functional component 2 times.
+
+props(properties)- data passing from parent to child
+function app()  //(root folder (parent))
+{
+    return <student name= 'shravani'/>
+}
+function student(props) //child folder 
+{
+    return<h2>name:{props.fname}</h2>
+}
+
+Activity 2 - 
+1.what is components and types??
+2.where we use component in react with 2 ex??
+3.what is props whyb we use props and types of props with 2 ex?
+
+state -> data can change ,value that changes over time .
+when state changes -> screen updates automatically .
+
+why we use state ?
+    because data chnages!
+
+    without state ----
+        without state value can not update/change on screen.
+
+    with state -----
+        UI updates automatically
+
+Props ----
+    passed from parent(app.jsx) to child 
+    react-only
+    used for communication
+
+State ----
+    Managed inside components
+    can change
+    used for dynamic UI
